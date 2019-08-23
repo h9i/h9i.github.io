@@ -1,0 +1,18 @@
+<html>
+<div class="container">
+    <label for="uname"><b>Username</b></label>
+    <input id="text" placeholder="Enter Username" name="uname" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input id="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit" onclick="myFunction()">Button</button>
+
+<script>
+function myFunction() {
+  var username=document.getElementById("text").value;
+  var password=document.getElementById("password").value;
+  window.location.href='loginapp://MyApp/?un=$username&pwd=$password'
+}
+</script>
+</html>
